@@ -1,0 +1,608 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Tahoma";
+  src: url(../fonts/Tahoma.woff);
+  src: url(../fonts/tahoma.woff2);
+}
+body {
+  color: #2c2c2c;
+  font-family: "Tahoma", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 22px 0;
+}
+.header-container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+}
+.nav {
+  display: flex;
+}
+.nav-link {
+  margin: 0px 11px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+.login {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 60px 0px 70px 0px;
+}
+.image-block {
+  margin-right: 120px;
+  position: relative;
+}
+.sale-text {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+.hero-text {
+}
+.author {
+  display: block;
+  font-size: 24px;
+  color: inherit;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+.title {
+  margin: 0;
+  font-size: 54px;
+  color: inherit;
+  margin-bottom: 10px;
+}
+.subtitle {
+  display: block;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.info-item {
+  line-height: 30px;
+  flex-basis: 45%;
+  font-size: 16px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+}
+.pricetag {
+  flex-basis: 45%;
+  font-size: 55px;
+  line-height: 36px;
+  margin-right: 55px;
+}
+.favorite {
+  display: flex;
+  align-items: center;
+  line-height: 32px;
+  text-decoration: none;
+  color: inherit;
+}
+.favorite-image {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+.button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  vertical-align: baseline;
+  text-align: center;
+}
+.read-story {
+  background-color: #f89c02;
+  margin-right: 20px;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 700;
+  width: 250px;
+  height: 62px;
+}
+.get-book {
+  display: inline-block;
+  border-color: #f89c02;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f89c02;
+  width: 250px;
+  height: 62px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about {
+  background-color: #f1f1f1;
+  padding: 90px 0px;
+}
+.about-container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about-book {
+  max-width: 454px;
+  flex-shrink: 0;
+}
+.section-title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+
+.about-author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 552px;
+  box-shadow: 0 1px 120px rgb(161, 161, 161, 0.08);
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 68px 53px;
+}
+.about-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.author-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.author-link {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+.author-avatar {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.author-text {
+  margin-top: 24px;
+  flex-basis: 100%;
+  line-height: 24px;
+  font-size: 16px;
+}
+.readers {
+  padding: 85px 0 110px 0;
+  min-height: auto;
+}
+.readers-container {
+  width: 1140px;
+  margin: auto;
+}
+
+.readers-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  min-height: 350px;
+}
+.img-reader {
+  margin-bottom: 20px;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 62px 0;
+}
+.footer-container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-title {
+  margin-bottom: 28px;
+}
+.footer-list {
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer-list-item {
+  list-style: none;
+}
+.footer-list-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.requisites {
+  margin-right: 166px;
+}
+.information {
+  margin-right: 160px;
+}
+.return {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 20px 25px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 10px 10px 120px rgba(161, 161, 161, 10);
+}
+
+@media (max-width: 1200px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 960px;
+  }
+  .image-block {
+    max-width: 390px;
+    margin-right: 30px;
+  }
+  .about-book {
+    max-width: 367px;
+  }
+  .readers {
+    padding-bottom: 94px;
+  }
+
+  .img-reader {
+    width: 139px;
+    height: 139px;
+  }
+}
+@media (max-width: 992px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 760px;
+  }
+  .nav {
+    display: none;
+  }
+  .image-block {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .author {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .info {
+    justify-content: flex-start;
+    margin-bottom: 39px;
+  }
+  .info-item {
+    font-size: 16px;
+  }
+  .age,
+  .format {
+    flex-grow: 1;
+  }
+  .price {
+    margin-bottom: 39px;
+  }
+  .pricetag {
+    margin-right: 0;
+  }
+  .button {
+    max-width: 190px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .about-book {
+    min-width: 100%;
+    margin-bottom: 62px;
+  }
+  .readers-img img:nth-child(6n + 6) {
+    display: none;
+  }
+  .requisites,
+  .information {
+    margin-right: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 560px;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+  }
+  .image-block {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+  .hero-image {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .read-story {
+    margin-right: 100px;
+  }
+  .readers-img img:nth-child(5n + 5) {
+    display: none;
+  }
+  .requisites {
+    margin-right: 30px;
+    margin-right: 60px;
+  }
+  .information {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 90%;
+  }
+  .author {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .info {
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+  }
+  .info-item {
+    flex-basis: 100%;
+    margin-bottom: 19px;
+  }
+  .favorite-image {
+    width: 50px;
+    height: 45px;
+    margin: 0;
+  }
+  .favorite-text {
+    display: none;
+  }
+  .button {
+    max-width: 100%;
+    min-width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .read-story {
+    margin-bottom: 20px;
+  }
+  .readers-img img:nth-child(4n + 4) {
+    display: none;
+  }
+  .about-book {
+    margin-bottom: 70px;
+  }
+  .about-author {
+    padding: 54px 44px;
+  }
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .author-text {
+    font-size: 14px;
+  }
+  .requisites,
+  .information,
+  .contacts {
+    flex-basis: 100%;
+    margin-bottom: 36px;
+    margin-right: 0;
+  }
+  .footer-title {
+    font-size: 18px;
+  }
+  .return {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    padding: 20px 25px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 10px 10px 120px rgba(161, 161, 161, 10);
+  }
+}
+@media (max-width: 320px) {
+  body {
+    max-width: 320px;
+  }
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 250px;
+  }
+  .author-name {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .sale-text {
+    padding: 5px 10px;
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+  .info-item {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .price {
+    width: 100%;
+  }
+  .pricetag {
+    margin-right: 0px;
+    flex-basis: 80%;
+  }
+  .favorite-image {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .button {
+    width: 100%;
+  }
+  .hero-container {
+    padding-bottom: 55px;
+  }
+  .about {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  .about-book {
+    max-width: 100%;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+  .about-author {
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+    margin-right: 5px;
+  }
+  .author-name {
+    font-size: 14px;
+  }
+  .author-link {
+    font-size: 12px;
+  }
+  .author-bio {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .readers {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .img-reader {
+    max-width: 125px;
+    max-height: 125px;
+    margin-bottom: 15px;
+  }
+  .readers-img {
+    min-height: auto;
+  }
+  .readers-img img:nth-child(8n + 3) {
+    display: none;
+    align-content: space-between;
+  }
+  .footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .requisites {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0px;
+  }
+  .information {
+    margin-bottom: 0;
+  }
+  .contacts {
+    margin-bottom: 0;
+  }
+  .return {
+    display: block;
+  }
+  .return {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    background-color: #b8b8b8;
+    box-shadow: 10px 10px 120px rgba(161, 161, 161, 10);
+  }
+}
